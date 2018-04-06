@@ -24,7 +24,7 @@ class ReunionTest < Minitest::Test
         hiking = Activity.new("hiking")
         camping = Activity.new("camping")
         bird_watching = Activity.new("bird watching")
-        reunion_activities = {hiking: hiking, camping: camping, bird_watching: bird_watching}
+        activities = {hiking: hiking, camping: camping, bird_watching: bird_watching}
         yosemite_reunion =  Reunion.new("Yosemite", activities)
 
         assert_equal true, !yosemite_reunion.activities.empty?
